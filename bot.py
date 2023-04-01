@@ -4,7 +4,7 @@ import telebot
 
 
 def tabla_json():
-  ruta='/media/equipos.json'
+  ruta='media/equipos.json'
   with open(ruta) as f:
     equipos=json.load(f)
   
@@ -58,7 +58,7 @@ def stats():
   equipos['equipos'].append(pinar)
   equipos['equipos'].append(isla)
 
-  with open('/media/equipos.json','w') as f:
+  with open('media/equipos.json','w') as f:
     json.dump(equipos,f)
 
 #stats()
@@ -76,13 +76,13 @@ def noticia_json():
   noticias['noticias'].append(news2)
  # txt.append('noticia--\n '+news['text'])
   
-  with open('/media/noticias.json','w') as f:
+  with open('media/noticias.json','w') as f:
     json.dump(noticias,f)
 
 #noticia_json()
 
 def news_json():
-  ruta='/media/noticias.json'
+  ruta='media/noticias.json'
   txt=[]
   with open(ruta) as f:
     noticias=json.load(f)
