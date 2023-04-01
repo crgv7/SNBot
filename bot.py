@@ -93,10 +93,15 @@ def send_welcome(message):
 def send_welcome(message):
 	photo = open('media/lb.png', 'rb')
 	bot.send_photo(message.chat.id, photo) 
+	
+@bot.message_handler(commands=['lp'])
+def send_welcome(message):
+	photo = open('media/lp.png', 'rb')
+	bot.send_photo(message.chat.id, photo) 	
 
 @bot.message_handler(commands=['about'])
 def send_welcome(message):
-	bot.send_message(message.chat.id, 'Grupo para dar informacion sobre la SNB\n Version: 1.00\n Creador: Carlos Garcia ') 
+	bot.send_message(message.chat.id, 'Grupo para dar informacion sobre la SNB\n Version: 1.00\n Actualizacion: 1/4/2023\n Creador: Carlos Garcia ') 
 
   
 
