@@ -9,77 +9,14 @@ def tabla_json():
     equipos=json.load(f)
   
     #ordenar
-    order=sorted(equipos['equipos'], key=lambda student: student['G'], reverse=True)
+    order=sorted(equipos['equipos'], key=lambda ganados: ganados['G'], reverse=True)
 
     # converitendo a String
     text = json.dumps(order, indent=4)
   return text   
 
 
-
-def stats():
-  equipos={}
-  equipos['equipos']=[]
-  
-
-  granma={'nombre':'Granma', 'G':"4",'P':'0','Prom':'1.000','u10':'1-0','racha':' G-1'}
-  guantanamo={'nombre':'Guantanamo', 'G':"1",'P':'0','Prom':'1.000','u10':'1-0','racha':' G-1'}
-  santiago={'nombre':'Santiago de Cuba', 'G':"5",'P':'0','Prom':'1.000','u10':'1-0','racha':' G-1'}
-  holguin={'nombre':'Holguin', 'G':"1",'P':'0','Prom':'1.000','u10':'1-0','racha':' G-1'}
-  lastuna={'nombre':'Las tunas', 'G':"1",'P':'0','Prom':'1.000','u10':'1-0','racha':' G-1'}
-  camaguey={'nombre':'Camaguey', 'G':"1",'P':'0','Prom':'1.000','u10':'1-0','racha':' G-1'}
-  ciego={'nombre':'Ciego', 'G':"1",'P':'0','Prom':'1.000','u10':'1-0','racha':' G-1'}
-  villa={'nombre':'Villa Clara', 'G':"1",'P':'0','Prom':'1.000','u10':'1-0','racha':' G-1'}
-  ssp={'nombre':'Santi Spritu', 'G':"1",'P':'0','Prom':'1.000','u10':'1-0','racha':' G-1'}
-  cienfuego={'nombre':'Cienfuego', 'G':"1",'P':'0','Prom':'1.000','u10':'1-0','racha':' G-1'}
-  mtz={'nombre':'Matanza', 'G':"1",'P':'0','Prom':'1.000','u10':'1-0','racha':' G-1'}
-  mayabeque={'nombre':'Mayabeque', 'G':"1",'P':'0','Prom':'1.000','u10':'1-0','racha':' G-1'}
-  habana={'nombre':'Habana', 'G':"1",'P':'0','Prom':'1.000','u10':'1-0','racha':' G-1'}
-  artemisa={'nombre':'Artemisa', 'G':"1",'P':'0','Prom':'1.000','u10':'1-0','racha':' G-1'}
-  pinar={'nombre':'Pinar del Rio', 'G':"1",'P':'0','Prom':'1.000','u10':'1-0','racha':' G-1'}
-  isla={'nombre':'Isla de la Juventud', 'G':"1",'P':'0','Prom':'1.000','u10':'1-0','racha':' G-1'}
-
-  equipos['equipos'].append(granma)
-  equipos['equipos'].append(guantanamo)
-  equipos['equipos'].append(santiago)
-  equipos['equipos'].append(holguin)
-  equipos['equipos'].append(lastuna)
-
-  equipos['equipos'].append(camaguey)
-  equipos['equipos'].append(ciego)
-  equipos['equipos'].append(villa)
-  equipos['equipos'].append(ssp)
-  equipos['equipos'].append(cienfuego)
-
-  equipos['equipos'].append(mtz)
-  equipos['equipos'].append(mayabeque)
-  equipos['equipos'].append(habana)
-  equipos['equipos'].append(artemisa)
-  equipos['equipos'].append(pinar)
-  equipos['equipos'].append(isla)
-
-  with open('media/equipos.json','w') as f:
-    json.dump(equipos,f)
-
-#stats()
-
 # noticias
-
-def noticia_json():
-  noticias={}
-  noticias['noticias']=[]
-  txt=[]
-  news1={'noticia':'La Habana.- EN UNA maratonica jornada de 16 juegos a siete innings, Villa Clara mostró la nota más alta al ganar sus dos partidos contra Cienfuegos y quedarse como unico conjunto con tres triunfos sucesivos en la recién iniciada 62 Serie Nacional de Beisbol. A primera hora, en el estadio Augusto César Sandino, el equipo naranja vencio 4x3 con destaque ofensivo para su joven torpedero Christian Rodriguez (4-3). Abrio el derecho Freddy Asiel Alvarez, quien apenas admitio tres jits en cinco entradas y dejo el cotejo igualado 1x1. Gano el relevista Randy Cueto, autor de cuatro entradas a ritmo de dos sencillos. En el duelo de cierre los villaclareños se impusieron 7x5 tambien con destaque madero en ristre para el parador en corto Rodríguez, quien conectó de 3-3 con un triple y tres carreras impulsadas.'}
-  news2={'noticia':'La FCB exigira derechos en caso de pitcher Yariel Rodríguez. La FCB requerira la cifra de 10 millones de dolares por daños y perjuicios.'}
-  
-  noticias['noticias'].append(news1)
-  noticias['noticias'].append(news2)
- # txt.append('noticia--\n '+news['text'])
-  
-  with open('media/noticias.json','w') as f:
-    json.dump(noticias,f)
-
-#noticia_json()
 
 def news_json():
   ruta='media/noticias.json'
