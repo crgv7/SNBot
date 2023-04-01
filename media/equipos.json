@@ -1,0 +1,132 @@
+{
+    "equipos":[
+        {
+            "nombre":"Granma",
+            "G":"4",
+            "P":"0",
+            "Prom":"1.000",
+            "u10":"1-0",
+            "racha":" G-1"
+        },
+        {
+            "nombre":"Guantanamo",
+            "G":"1",
+            "P":"0",
+            "Prom":"1.000",
+            "u10":"1-0",
+            "racha":" G-1"
+        },
+        {
+            "nombre":"Santiago de Cuba",
+            "G":"5",
+            "P":"0",
+            "Prom":"1.000",
+            "u10":"1-0",
+            "racha":" G-1"
+        },
+        {
+            "nombre":"Holguin",
+            "G":"1",
+            "P":"0",
+            "Prom":"1.000",
+            "u10":"1-0",
+            "racha":" G-1"
+        },
+        {
+            "nombre":"Las tunas",
+            "G":"1",
+            "P":"0",
+            "Prom":"1.000",
+            "u10":"1-0",
+            "racha":" G-1"
+        },
+        {
+            "nombre":"Camaguey",
+            "G":"1",
+            "P":"0",
+            "Prom":"1.000",
+            "u10":"1-0",
+            "racha":" G-1"
+        },
+        {
+            "nombre":"Ciego",
+            "G":"1",
+            "P":"0",
+            "Prom":"1.000",
+            "u10":"1-0",
+            "racha":" G-1"
+        },
+        {
+            "nombre":"Villa Clara",
+            "G":"1",
+            "P":"0",
+            "Prom":"1.000",
+            "u10":"1-0",
+            "racha":" G-1"
+        },
+        {
+            "nombre":"Santi Spritu",
+            "G":"1",
+            "P":"0",
+            "Prom":"1.000",
+            "u10":"1-0",
+            "racha":" G-1"
+        },
+        {
+            "nombre":"Cienfuego",
+            "G":"1",
+            "P":"0",
+            "Prom":"1.000",
+            "u10":"1-0",
+            "racha":" G-1"
+        },
+        {
+            "nombre":"Matanza",
+            "G":"1",
+            "P":"0",
+            "Prom":"1.000",
+            "u10":"1-0",
+            "racha":" G-1"
+        },
+        {
+            "nombre":"Mayabeque",
+            "G":"1",
+            "P":"0",
+            "Prom":"1.000",
+            "u10":"1-0",
+            "racha":" G-1"
+        },
+        {
+            "nombre":"Habana",
+            "G":"1",
+            "P":"0",
+            "Prom":"1.000",
+            "u10":"1-0",
+            "racha":" G-1"
+        },
+        {
+            "nombre":"Artemisa",
+            "G":"1",
+            "P":"0",
+            "Prom":"1.000",
+            "u10":"1-0",
+            "racha":" G-1"
+        },
+        {
+            "nombre":"Pinar del Rio",
+            "G":"1",
+            "P":"0",
+            "Prom":"1.000",
+            "u10":"1-0",
+            "racha":" G-1"
+        },
+        {
+            "nombre":"Isla de la Juventud",
+            "G":"1",
+            "P":"0",
+            "Prom":"1.000",
+            "u10":"1-0",
+            "racha":" G-1"
+        }
+    ]
+}
