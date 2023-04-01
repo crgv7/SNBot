@@ -154,7 +154,7 @@ def send_welcome(message):
  
 @bot.message_handler(commands=['lb'])
 def send_welcome(message):
-	photo = open('/media/lb.png', 'rb')
+	photo = open('media/lb.png', 'rb')
 	bot.send_photo(message.chat.id, photo) 
 
 @bot.message_handler(commands=['about'])
