@@ -61,7 +61,7 @@ def stats():
   with open('/media/equipos.json','w') as f:
     json.dump(equipos,f)
 
-stats()
+#stats()
 
 # noticias
 
@@ -79,7 +79,7 @@ def noticia_json():
   with open('/media/noticias.json','w') as f:
     json.dump(noticias,f)
 
-noticia_json()
+#noticia_json()
 
 def news_json():
   ruta='/media/noticias.json'
