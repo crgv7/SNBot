@@ -72,6 +72,13 @@ def send_welcome(message):
 	bot.reply_to(message, "Comandos\n /tabla posiciones de Equipos\n /noticias noticias\n /resultados resultados de la jornada\n /lb lideres de  Bateo\n /lp lideres de picheo\n /about Acerca de")
  
 
+@bot.message_handler(commands=['/stop'])
+def send_welcome(message):
+	bot.stop_polling()
+	
+	
+
+
 
 
 
