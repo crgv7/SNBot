@@ -65,7 +65,7 @@ print(resultados())
      
 
 
-bot=telebot.TeleBot('6058279985:AAEhI850FxFNzdsaW2BvC8qPmXkOuzD6jXc', parse_mode=None)
+bot=telebot.TeleBot('6058279985:AAFcu82w8rfcAMvS0x9qQHS3dpJeUVj5goE', parse_mode=None)
 
 @bot.message_handler(commands=['ayuda'])
 def send_welcome(message):
