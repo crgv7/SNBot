@@ -39,14 +39,14 @@ news_json()
 def resultados():
   resultados=[]
 
-  juego1="GRM 4-0 MTZ "
-  juego2="STG 2-0 ART "
-  juego3="GTM 3-5 PR "
-  juego4="HOL 1-0 MAY "
-  juego5="LTU 4-0 ISL "
-  juego6="CMG 4-0 SSP "
-  juego7="VCL 8-1 CFG "
-  juego8="IND 4-0 CAV "
+  juego1="GRM 4-9 MTZ "
+  juego2="STG 12-7 ART "
+  juego3="GTM 5-4 PR "
+  juego4="HOL 7-3 MAY "
+  juego5="LTU 8-4 ISL "
+  juego6="CMG 16-5 SSP "
+  juego7="VCL 3-2 CFG "
+  juego8="IND 3-6 CAV "
   
   resultados.append(juego1)
   resultados.append(juego2)
@@ -78,29 +78,30 @@ def send_welcome(message):
 
 @bot.message_handler(commands=['tabla'])
 def send_stat(message):
-	bot.send_message(message.chat.id, tabla_json()) 
+	photo = open('media/tabla.png', 'rb')
+	bot.send_photo(message.chat.id, photo) 	
  
 @bot.message_handler(commands=['noticias'])
-def send_welcome(message):
+def send_noticias(message):
 	bot.send_message(message.chat.id, news_json()) 
 
 @bot.message_handler(commands=['resultados'])
-def send_welcome(message):
+def send_resultados(message):
 	txt='\n'.join(resultados())
 	bot.send_message(message.chat.id, txt) 
  
 @bot.message_handler(commands=['lb'])
-def send_welcome(message):
+def send_lb(message):
 	photo = open('media/lb.png', 'rb')
 	bot.send_photo(message.chat.id, photo) 
 	
 @bot.message_handler(commands=['lp'])
-def send_welcome(message):
+def send_lp(message):
 	photo = open('media/lp.png', 'rb')
 	bot.send_photo(message.chat.id, photo) 	
 
 @bot.message_handler(commands=['about'])
-def send_welcome(message):
+def send_about(message):
 	bot.send_message(message.chat.id, 'Grupo para dar informacion sobre la SNB\n Version: 1.00\n Actualizacion: 1/4/2023\n Creador: Carlos Garcia ') 
 
   
