@@ -1,4 +1,4 @@
-FROM windows:latest
+FROM python:3
 
 RUN pip isntall requirements.txt
 
