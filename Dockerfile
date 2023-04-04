@@ -1,5 +1,9 @@
 FROM python:3
 
-RUN pip install requirements.txt
+WORKDIR /usr/src/app
 
-ENTRYPOINT python bot.py
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+
+CMD [ "python", "bot.py" ]
